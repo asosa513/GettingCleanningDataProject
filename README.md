@@ -1,2 +1,2 @@
-# GettingCleanningDataProject
-Peer-graded Assignment: Getting and Cleaning Data Course Project
+## GettingCleanningDataProject
+#Peer-graded Assignment: Getting and Cleaning Data Course Project
