@@ -1,7 +1,7 @@
 # GettingCleanningDataProject
 Peer-graded Assignment: Getting and Cleaning Data Course Project
 
-The file run_analysis [04192020 1211].R runs all the analyses needed in this project.
+The file run_analysis [04222020 1321].R runs all the analyses needed in this project.
 
 ## Training Data
 1) Reads the subject_train.txt and assigns a variable "key" to be able to merge with all the files of the training data
@@ -28,7 +28,12 @@ The means and standard deviations of all variables were obtained using apply com
 This can be found in the file means_split.csv attached in this repository.
 
 ## Codebook
-The codebook was obtained using the codebook function from the codebook package
+The codebook was obtained using the following code:
+#install.packages('pastecs')
+library(pastecs)
+codebook <- stat.desc(allData)
+write.csv(codebook, file = "./R/Getting and Cleanning Data/project/output/codebook.csv")
+
 
 
 
