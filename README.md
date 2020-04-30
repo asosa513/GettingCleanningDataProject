@@ -1,5 +1,3 @@
-## Code Book
-
 The script run_analysis.R conducts the following process:
 
 ## 1. Reads the following files into R:
