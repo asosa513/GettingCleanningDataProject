@@ -92,6 +92,8 @@ The complete list of variables of each feature vector is available in 'features.
 
 ## 5. The script merges the train and test data sets into one called allData.
 
+The file can be downloaded from the link https://drive.google.com/file/d/1Y4JBkkzcsE3mo-9TdEZZBck8zCgCH3-h/view?usp=sharing
+
 ## 6. The means and standard deviations of all the variables are included in the file means_sd.txt:
 
 ## 7. Finally, for each individual and activity level the script calculates the means of all the variables. The results are included in the file means_split.txt
