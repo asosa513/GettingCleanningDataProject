@@ -1,8 +1,8 @@
-Code Book
+## Code Book
 
 The script run_analysis.R conducts the following process:
 
-1. Reads the following files into R:
+## 1. Reads the following files into R:
 
 - 'features_info.txt': Shows information about the variables used on the feature vector.
 - 'features.txt': List of all features.
@@ -12,7 +12,7 @@ The script run_analysis.R conducts the following process:
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
 
-2. For each subset (train/test), the script adds the activity levels coded as follows:
+## 2. For each subset (train/test), the script adds the activity levels coded as follows:
 
 1 WALKING
 2 WALKING_UPSTAIRS
@@ -21,10 +21,9 @@ The script run_analysis.R conducts the following process:
 5 STANDING
 6 LAYING
 
-3. For each subset (train/test), the script merges the variables included in the files features.txt. These are described as follows:
+## 3. For each subset (train/test), the script merges the variables included in the files features.txt. These are described as follows:
 
 Feature Selection 
-=================
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
@@ -83,7 +82,7 @@ tBodyGyroJerkMean
 
 The complete list of variables of each feature vector is available in 'features.txt'
 
-4. Next, for each subset train/test of individuals, the script calculates the means and standard deviations of the Inertial signals variables as described below:
+## 4. Next, for each subset train/test of individuals, the script calculates the means and standard deviations of the Inertial signals variables as described below:
 
 - Inertial Signals/total_acc_x.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x.txt' and 'total_acc_z.txt' files for the Y and Z axis. 
 
@@ -91,9 +90,9 @@ The complete list of variables of each feature vector is available in 'features.
 
 - Inertial Signals/body_gyro_x.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-5. The script merges the train and test data sets into one called allData.
+## 5. The script merges the train and test data sets into one called allData.
 
-6. The means and standard deviations of all the variables are included in the file means_sd.txt:
+## 6. The means and standard deviations of all the variables are included in the file means_sd.txt:
 
-7. Finally, for each individual and activity level the script calculates the means of all the variables. The results are included in the file means_split.txt
+## 7. Finally, for each individual and activity level the script calculates the means of all the variables. The results are included in the file means_split.txt
 
